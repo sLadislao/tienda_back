@@ -1,0 +1,33 @@
+{
+  "name": "tienda_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sLadislao/tienda_back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sLadislao/tienda_back/issues"
+  },
+  "homepage": "https://github.com/sLadislao/tienda_back#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.20.2",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.4",
+    "mongoose": "^7.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
