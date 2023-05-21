@@ -47,7 +47,6 @@ const login_admin = async function(req, res) {
   admin_arr = await Admin.find({email: data.email});
   if(admin_arr.length) {
     let user = admin_arr[0];
-
     bcrypt.compare(data.password, user.password, async (error, check) => {
       if(check) {
         res.status(200).send({
@@ -57,14 +56,14 @@ const login_admin = async function(req, res) {
       }
       else {
         res.status(200).send({
-          message:'Passwords not match'
+          message:'Contraseña incorrecta'
         });
       }
     });
   }
   else {
     res.status(200).send({
-      message: 'EMail not found',
+      message: 'No se enconto el correo',
       data: undefined
     })
   }
