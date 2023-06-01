@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const { Schema } = require("mongoose");
 
 const ClienteSchema = Schema({
-  monbres: { type: String, required: true },
+  nombres: { type: String, required: true },
   apellidos: { type: String, required: true },
   pais: { type: String, required: false },
   email: { type: String, required: true },
